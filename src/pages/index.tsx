@@ -1,60 +1,106 @@
-import { Link } from "@heroui/link";
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
-import { button as buttonStyles } from "@heroui/theme";
 
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
-
+import { motion } from 'motion/react'
+import { HiOutlineArrowSmRight } from "react-icons/hi";
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center">
-          <span className={title()}>Make&nbsp;</span>
-          <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
-          <br />
-          <span className={title()}>
-            websites regardless of your design experience.
-          </span>
-          <div className={subtitle({ class: "mt-4" })}>
-            Beautiful, fast and modern React UI library.
-          </div>
+      <div className="container mx-auto py-10 lg:py-20">
+        <div className="absolute">
+          <motion.span 
+            initial={{
+              opacity: 0,
+              y: -100,
+            }}
+            animate={{
+              opacity: 1,
+              y: 1,
+              scale: 1,
+              
+            }}
+            transition={{
+              duration: 1.9,
+              delay: 2,
+            }}
+          className="hidden lg:block relative -top-100 -left-30 w-[100px] h-[500px] lg:h-[800px] bg-gray-300 blur-[80px] rounded-full -rotate-45 bg-neutral-700"></motion.span>
+      </div>
+      
+      
+      <br /><br />
+        <div className="flex justify-center items-center">
+          <button className="z-30 relative flex items-center bg-white dark:bg-neutral-900 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-full text-[16px] px-5 py-[2.5px] inter-medium">Automated Lead Generation
+
+            <span className="inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 bottom-0 h-px w-2/3 mx-auto bg-gradient-to-r from-transparent via-slate-500 to-transparent"></span>
+            <span className="z-10 inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 -bottom-16 h-10 w-[100%] mx-auto bg-zinc-600 dark:bg-neutral-400 blur-2xl rounded-b-full "></span>
+            {/* <span className="z-10 inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 -bottom-10 -left-60 h-30 w-[100%] mx-auto bg-zinc-600 dark:bg-gray-400 -rotate-45 -bottom-40 blur-2xl rounded-t-full "></span>
+            <span className="z-10 inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 -bottom-10 h-30 w-[100%] left-30 mx-auto bg-zinc-600 dark:bg-gray-400 rotate-40 -bottom-40 blur-2xl rounded-t-full"></span> */}
+          </button>
+
+
+        </div> <br /> <br />
+        <div className="text-center ">
+          <h1 className="text-3xl lg:text-[6.7rem] inter-bold leading-tight lg:leading-none">Generate Images, Text and Videos with AI</h1>
+          <p className="px-2 py-4 lg:w-2/3 mx-auto lg:py-6 text-[15px] lg:text-lg inter-regular">Everything AI seamlessly integrated all the modern AI generation tools into one platform so that you can generate content with a single click.Generate images with text.</p>
         </div>
 
-        <div className="flex gap-3">
-          <Link
-            isExternal
-            className={buttonStyles({
-              color: "primary",
-              radius: "full",
-              variant: "shadow",
-            })}
-            href={siteConfig.links.docs}
-          >
-            Documentation
-          </Link>
-          <Link
-            isExternal
-            className={buttonStyles({ variant: "bordered", radius: "full" })}
-            href={siteConfig.links.github}
-          >
-            <GithubIcon size={20} />
-            GitHub
-          </Link>
+        <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-10 py-5 lg:py-10 ">
+          <motion.button
+            initial={{
+              scale: 0.98,
+              
+            }}
+            style={{
+                translateZ : 100
+            }}
+            whileHover={{
+              scale: 1,
+              y: -4,
+            }}
+            transition={{
+              duration: 0.2,
+            }}
+          className=" cursor-pointer inter-bold bg-neutral-900 dark:bg-white dark:text-black px-14 py-[8px] rounded-lg text-white shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">Start for free</motion.button>
+          <motion.button
+            initial={{
+              scale: 0.98,
+              
+            }}
+              style={{
+                translateZ : 100
+            }}
+            whileHover={{
+              scale: 1,
+              y: -4,
+              // rotateX: -6,
+              rotateY: -18,
+            }}
+            transition={{
+              duration: 0.2,
+            }}
+          className=" cursor-pointer relative inter-bold cursor-pointer dark:bg-zinc-900 dark:text-white bg-violet-50 px-14 py-[8px] rounded-lg shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] flex items-center gap-2">See Our Services <motion.span
+            whileHover={{
+              y: -10,
+              x: 100,
+              // y: 1,
+              // repeatCount: Infinity,
+              rotate: [0 , 360 , 0]
+            }}
+            // whileTap={{
+            //   x: 100,
+            //   rotateY: [2 , 4 , 2],
+            //   opacity: 0,
+            // }}
+            transition={{
+              duration: 1,
+              
+            }}
+          className="text-xl"><HiOutlineArrowSmRight /></motion.span>
+
+            <span className="inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 bottom-0 h-px w-full mx-auto bg-gradient-to-r from-transparent via-violet-500 to-transparent"></span>
+          </motion.button>
         </div>
 
-        <div className="mt-8">
-          <Snippet hideCopyButton hideSymbol variant="bordered">
-            <span>
-              Get started by editing{" "}
-              <Code color="primary">pages/index.tsx</Code>
-            </span>
-          </Snippet>
-        </div>
-      </section>
+      </div>
     </DefaultLayout>
   );
 }
