@@ -80,10 +80,9 @@ export const Navbar = () => {
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
-
-      <NavbarContent className="sm:hidden basis-1 pl-4 pr-3" justify="end">
-        <ThemeSwitch />
+      <NavbarContent className="sm:hidden basis-1 pl-4 pr-3  h-7" justify="end">
         <NavbarMenuToggle />
+        <ThemeSwitch />
       </NavbarContent>
       </motion.div>
     </div>
