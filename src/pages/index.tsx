@@ -2,6 +2,7 @@
 import DefaultLayout from "@/layouts/default";
 import { motion } from 'motion/react'
 import { HiOutlineArrowSmRight } from "react-icons/hi";
+import HeroImageComponent from "@/components/HeroImageComponent";
 export default function IndexPage() {
   return (
     <DefaultLayout>
@@ -77,7 +78,7 @@ export default function IndexPage() {
             transition={{
               duration: 0.2,
             }}
-          className=" cursor-pointer relative inter-bold cursor-pointer dark:bg-zinc-900 dark:text-white bg-violet-50 px-14 py-[8px] rounded-lg shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] flex items-center gap-2">See Our Services <motion.span
+          className=" cursor-pointer relative inter-bold cursor-pointer dark:bg-zinc-900 dark:text-white bg-white px-14 py-[8px] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex items-center gap-2">See Our Services <motion.span
             whileHover={{
               y: -10,
               x: 100,
@@ -96,8 +97,12 @@ export default function IndexPage() {
             }}
           className="text-xl"><HiOutlineArrowSmRight /></motion.span>
 
-            <span className="inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 bottom-0 h-px w-full mx-auto bg-gradient-to-r from-transparent via-violet-500 to-transparent"></span>
+            <span className="inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 bottom-0 h-px w-full mx-auto bg-gradient-to-r from-transparent via-slate-950 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent"></span>
           </motion.button>
+        </div>
+        {/* HERO SECTION MAI IMAGE COMPONENT */}
+        <div className="py-10">
+            <HeroImageComponent />
         </div>
 
       </div>
