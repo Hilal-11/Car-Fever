@@ -38,7 +38,10 @@ export const Navbar = () => {
           delay: 0.2,
 
         }}
-      className="absolute top-3 lg:top-6 w-full flex justify-between items-center bg-neutral-200 dark:bg-neutral-950 rounded-full py-3 lg:py-4 px-2 lg:px-10">
+      className="absolute top-3 lg:top-6 w-full flex justify-between items-center bg-neutral-100 dark:bg-neutral-950 rounded-full py-3 lg:py-4 px-2 lg:px-10 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
+
+        <span className="inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 bottom-0 h-px w-full mx-auto bg-gradient-to-r from-transparent via-slate-500 to-transparent"></span>
+
         <NavbarBrand className="gap-3 max-w-fit">
           <Link
             className="flex justify-start items-center gap-1"
