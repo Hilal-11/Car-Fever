@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-
+import { motion } from 'motion/react'
 import IndexPage from "@/pages/index";
 import DocsPage from "@/pages/docs";
 import PricingPage from "@/pages/pricing";
@@ -38,7 +38,26 @@ function App() {
               </div>
           </div>
 
-          <ChooseUs />
+          
+          <div className="relative">
+            <ChooseUs />
+            <motion.span 
+            initial={{
+              opacity: 0,
+              y: -100,
+            }}
+            animate={{
+              opacity: 1,
+              y: 1,
+              scale: 1,
+              
+            }}
+            transition={{
+              duration: 1.9,
+              delay: 2,
+            }}
+          className="hidden lg:block absolute right-0 -top-40 w-[100px] h-[800px] bg-gray-300 blur-[90px] rounded-full rotate-45 bg-neutral-700"></motion.span>
+          </div>
         </>
         } path="/">
     </Route>
