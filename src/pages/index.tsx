@@ -5,6 +5,7 @@ import { HiOutlineArrowSmRight } from "react-icons/hi";
 import HeroImageComponent from "@/components/HeroImageComponent";
 export default function IndexPage() {
   return (
+
     <DefaultLayout>
       <div className="container mx-auto py-10 lg:py-20">
         <div className="absolute">
@@ -104,8 +105,8 @@ export default function IndexPage() {
         <div className="py-10">
             <HeroImageComponent />
         </div>
-
       </div>
     </DefaultLayout>
+        
   );
 }
