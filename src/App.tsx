@@ -23,10 +23,10 @@ function App() {
                 <div className="text-center space-y-4">
                   <h1 className="inter-extrabold text-4xl lg:text-7xl px-10">Trusted by the Best Companies</h1>
                   <p className="inter-regular text-sm lg:text-lg px-8 lg:w-1/2 mx-auto">From innovative startups to global enterprises, Prime Deck has become the preferred platform for leaders in technology, finance, healthcare, and beyond.</p>
-                  <p className="text-center text-[15px] inter-bold py-10">Over 50+ business trust us</p>
+                  <p className="text-center text-[15px] inter-bold py-6">Over 50+ business trust us</p>
                 </div>
               </div>
-              <div className="flex gap-10 py-5 lg:py-10 justify-center items-center flex-wrap">
+              <div className="flex gap-10 justify-center items-center flex-wrap">
                 {
                   companiesData.map((item) => (
                     <div className="flex items-end justify-center gap-1 inter-medium" key={item.id}>
