@@ -8,6 +8,8 @@ import AboutPage from "@/pages/about";
 
 import { companiesData } from '@/config/companies'
 import ChooseUs from "./components/ChooseUs";
+import Pricing from "./components/Pricing";
+import Reviews from "./components/Reviews";
 function App() {
 
   
@@ -41,23 +43,9 @@ function App() {
           
           <div className="relative">
             <ChooseUs />
-            <motion.span 
-            initial={{
-              opacity: 0,
-              y: -100,
-            }}
-            animate={{
-              opacity: 1,
-              y: 1,
-              scale: 1,
-              
-            }}
-            transition={{
-              duration: 1.9,
-              delay: 2,
-            }}
-          className="hidden lg:block absolute right-0 -top-40 w-[100px] h-[800px] bg-gray-300 blur-[90px] rounded-full rotate-45 bg-neutral-700"></motion.span>
           </div>
+          <Reviews />
+          <Pricing />
         </>
         } path="/">
     </Route>
