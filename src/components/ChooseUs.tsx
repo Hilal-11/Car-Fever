@@ -1,9 +1,14 @@
 import React from 'react'
+import { PiCubeDuotone } from "react-icons/pi";
+
 import { motion } from 'motion/react'
 function ChooseUs() {
   return (
     <div className='container mx-auto py-5'>
         <div>
+            <div className='flex justify-center mx-auto'>
+              <h3 className='text-center bg-white flex gap-2 justify-center items-center shadow-sm shadow-gray-400 rounded-full px-8 py-1 inter-bold text-sm'><span><PiCubeDuotone /></span>Choose Us</h3>
+            </div>
             <h1 className='text-4xl lg:text-7xl inter-bold text-center'>Why you chosse us</h1>
         </div>
         <div 
