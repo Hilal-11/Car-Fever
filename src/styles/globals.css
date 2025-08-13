@@ -83,6 +83,17 @@
   font-style: normal;
 }
 
+.scroll-verticallyUp {
+  animation: scrollUp 12s linear infinite;
+}
 
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 
 @config "../../tailwind.config.js"
