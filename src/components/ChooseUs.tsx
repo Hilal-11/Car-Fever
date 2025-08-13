@@ -4,14 +4,14 @@ function ChooseUs() {
   return (
     <div className='container mx-auto py-5'>
         <div>
-            <h1 className='text-7xl inter-bold text-center'>Why you chosse us</h1>
+            <h1 className='text-4xl lg:text-7xl inter-bold text-center'>Why you chosse us</h1>
         </div>
         <div 
           id='bento-grid'
-          className='grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-6 mx-auto  py-12 px-6 relative'
+          className='grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-6 mx-auto  py-6 px-3 relative'
         >
             <motion.div 
-              className='overflow-y-auto lg:row-span-2 lg:h-auto h-[400px] w-full bg-zinc-100 dark:bg-neutral-900 rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
+              className='lg:row-span-2 lg:h-auto h-auto w-full bg-zinc-100 dark:bg-neutral-900 rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
                 hover:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]
               dark:shadow-gray-950'
               initial={{ opacity: 0, y: 100, scale: 0.9, filter: "blur(4px)" }}
@@ -23,47 +23,35 @@ function ChooseUs() {
             >   
 
 
-              <div className='px-10 py-10 break-words overflow-auto ring-primary-100'>
+              <div className='px-4 py-5 break-words lg:overflow-hidden overflow-auto ring-primary-100'>
                 <pre>
                     <code className='break-words'>
                         {
 `function matchOrder(origin, target) {
-    const orderedOrigin = [];
-    const pointers = { color: 0, var: 0, number: 0 };
-    for (let i = 0; i < target.values.length; i++) {
-        const type = target.types[i];
-        const originIndex = origin.indexes[type][pointers[type]];
-        const originValue = origin.values[originIndex] ?? 0;
-        orderedOrigin[i] = originValue;
-        pointers[type]++;
-    }
-    return orderedOrigin;
+  const orderedOrigin = [];
+  const pointers = { color: 0, var: 0, number: 0 };
+  for (let i = 0; i < target.values.length; i++) {
+    const type = target.types[i];
+    const originIndex = origin.indexes[type][pointers[type]];
+    const originValue = origin.values[originIndex] ?? 0;
+    orderedOrigin[i] = originValue;
+    pointers[type]++;
 }
-const mixComplex = (origin, target) => {
-    const template = complex.createTransformer(target);
-    const originStats = analyseComplexValue(origin);
-    const targetStats = analyseComplexValue(target);
-    const canInterpolate = originStats.indexes.var.length === targetStats.indexes.var.length &&
-        originStats.indexes.color.length === targetStats.indexes.color.length &&
-        originStats.indexes.number.length >= targetStats.indexes.number.length;
-    if (canInterpolate) {
-        if ((invisibleValues.has(origin) &&
-            !targetStats.values.length) ||
-            (invisibleValues.has(target) &&
-                !originStats.values.length)) {
-            return mixVisibility(origin, target);
-        }
-        return pipe(mixArray(matchOrder(originStats, targetStats), targetStats.values), template);
-    }
-        
-};
+  for (let i = 0; i < target.values.length; i++) {
+    const type = target.types[i];
+    const originIndex = origin.indexes[type][pointers[type]];
+    const originValue = origin.values[originIndex] ?? 0;
+}
+  return orderedOrigin;
 }`
                         }
                     </code>
                 </pre>
               </div>
-
-
+              
+              <div className='flex items-start justify-center h-full  '>
+                    <img className='rounded-xl w-full object-cover' src="https://webmastery-portfolio.vercel.app/assets/Hilal-11-CObVtM9G.png" alt="" />
+              </div>
                 
             </motion.div>
             <motion.div 
