@@ -12,6 +12,7 @@ import Pricing from "./components/Pricing";
 import Reviews from "./components/Reviews";
 import BookcallAndSignupBox from "./components/BookcallAndSignupBox";
 import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 function App() {
 
   
@@ -30,7 +31,7 @@ function App() {
                   <p className="text-center text-[15px] inter-bold py-6">Over 50+ business trust us</p>
                 </div>
               </div>
-              <div className="flex gap-10 justify-center items-center flex-wrap">
+              <div className="flex gap-10 justify-center items-center flex-wrap px-4">
                 {
                   companiesData.map((item) => (
                     <div className="flex items-end justify-center gap-1 inter-medium" key={item.id}>
@@ -58,6 +59,7 @@ function App() {
       <Route element={<BlogPage />} path="/blog" />
       <Route element={<AboutPage />} path="/about" />
     </Routes>
+    <Footer />
     </>
   );
 }
