@@ -10,6 +10,7 @@ import { companiesData } from '@/config/companies'
 import ChooseUs from "./components/ChooseUs";
 import Pricing from "./components/Pricing";
 import Reviews from "./components/Reviews";
+import BookcallAndSignupBox from "./components/BookcallAndSignupBox";
 function App() {
 
   
@@ -46,6 +47,7 @@ function App() {
           </div>
           <Reviews />
           <Pricing />
+          <BookcallAndSignupBox />
         </>
         } path="/">
     </Route>
