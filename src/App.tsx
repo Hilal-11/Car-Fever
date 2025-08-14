@@ -11,6 +11,7 @@ import ChooseUs from "./components/ChooseUs";
 import Pricing from "./components/Pricing";
 import Reviews from "./components/Reviews";
 import BookcallAndSignupBox from "./components/BookcallAndSignupBox";
+import FAQ from "./components/FAQ";
 function App() {
 
   
@@ -47,6 +48,7 @@ function App() {
           </div>
           <Reviews />
           <Pricing />
+          <FAQ />
           <BookcallAndSignupBox />
         </>
         } path="/">
