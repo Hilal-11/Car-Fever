@@ -8,7 +8,7 @@ function Reviews() {
             <h3 className="dark:text-black bg-white flex gap-2 justify-center items-center shadow-sm shadow-gray-400 rounded-full px-8 py-1 inter-bold text-sm"><span><PiCubeDuotone /></span>Reviews</h3>
         </div>
         <div className='text-center space-y-3 my-5'>
-            <h1 className='text-4xl lg:text-7xl inter-bold text-gray-800'>Loved by people all over the world</h1>
+            <h1 className='text-4xl lg:text-7xl inter-bold text-gray-800 dark:text-white '>Loved by people all over the world</h1>
             <p className='text-sm lg:text-lg lg:w-2/3 mx-auto inter-medium'>Our customers span every corner of the globe, and their stories speak louder than anything we could say. From first-time users to long-time supporters, each review is a reminder of why we do what we do.</p>
         </div>
 
