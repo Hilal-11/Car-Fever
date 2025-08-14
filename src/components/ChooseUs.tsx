@@ -1,8 +1,34 @@
 import React from 'react'
 import { PiCubeDuotone } from "react-icons/pi";
-
+import { CodeBlock, dracula } from 'react-code-blocks';
 import { motion } from 'motion/react'
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
+
 function ChooseUs() {
+
+
+  const code = `import express from "express"
+const userRouter = express.Router();
+import isLoggedIn from "../middleware/auth.middleware.js"; 
+import register from "../controllers/register.controller.js"
+import varify from '../controllers/varify.controller.js'
+import login from '../controllers/login.controller.js'
+import profile from '../controllers/profile.controller.js'
+import forgetPassword from '../controllers/forgetPassword.controller.js'
+import resetPassword from '../controllers/resetPassword.controller.js'
+import logout from '../controllers/logout.controller.js'
+router.post("/register" , register);
+router.post("/varify/:token" , varify);
+router.post("/login" , login);
+router.get("/profile" , isLoggedIn , profile);
+router.get("/logout", isLoggedIn , logout);
+router.post("/forgetPassword" , forgetPassword);
+router.post("/resetPassword" , resetPassword);
+export default userRouter`;
+  const lang = "javascript"
+
   return (
     <div className='container mx-auto py-5'>
         <div>
@@ -26,32 +52,12 @@ function ChooseUs() {
               whileHover={{ scale: 1.02,transition: { duration: 0.3 }
               }}
             >   
-
-
-              <div className='px-4 py-5 break-words lg:overflow-hidden overflow-auto ring-primary-100'>
-                <pre>
-                    <code className='break-words'>
-                        {
-`function matchOrder(origin, target) {
-  const orderedOrigin = [];
-  const pointers = { color: 0, var: 0, number: 0 };
-  for (let i = 0; i < target.values.length; i++) {
-    const type = target.types[i];
-    const originIndex = origin.indexes[type][pointers[type]];
-    const originValue = origin.values[originIndex] ?? 0;
-    orderedOrigin[i] = originValue;
-    pointers[type]++;
-}
-  for (let i = 0; i < target.values.length; i++) {
-    const type = target.types[i];
-    const originIndex = origin.indexes[type][pointers[type]];
-    const originValue = origin.values[originIndex] ?? 0;
-}
-  return orderedOrigin;
-}`
-                        }
-                    </code>
-                </pre>
+              <div className='break-words lg:overflow-hidden overflow-auto ring-primary-100 '>
+                      <CodeBlock
+                        text={code}
+                        language={lang}
+                        showLineNumbers={true}        
+                      />
               </div>
               
               <div className='flex items-start justify-center h-full  '>
@@ -69,8 +75,8 @@ function ChooseUs() {
               whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
             >
-                <div className='py-6 px-2 flex items-start justify-center items-center'>
-                    <img className='rounded-xl' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fserver-rendering-with-streaming.png&w=1920&q=75" alt="" />
+                <div className='flex items-start justify-center items-center'>
+                    <img className='rounded-t-xl object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fserver-rendering-with-streaming.png&w=1920&q=75" alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
                     <h1 className='text-xl lg:text-2xl poppins-bold'>React Server Components</h1>
@@ -89,8 +95,8 @@ function ChooseUs() {
               whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
             >
-                <div className='py-6 px-2 flex items-start justify-center'>
-                    <img className='w-2/3' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fnextjs%2Fspheres-light.png&w=300&q=100" alt="" />
+                <div className=' flex items-start justify-center'>
+                    <img className='object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fnextjs%2Fspheres-light.png&w=300&q=100" alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
                     <h1 className='text-xl lg:text-2xl poppins-bold'>Route Handlers and Middleware</h1>
@@ -109,8 +115,8 @@ function ChooseUs() {
               whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
             > 
-                <div className='py-6 px-2 flex items-start justify-center'>
-                    <img className='' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fnested-file-conventions-component-hierarchy.png&w=1920&q=75" alt="" />
+                <div className='flex items-start justify-center'>
+                    <img className='object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fnested-file-conventions-component-hierarchy.png&w=1920&q=75" alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
                     <h1 className='text-xl lg:text-2xl poppins-bold'>Dynamic HTML Streaming</h1>
@@ -129,8 +135,8 @@ function ChooseUs() {
               whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
             > 
-                <div className='py-6 px-2 flex items-start justify-center'>
-                    <img className='' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ffile-conventions-component-hierarchy.png&w=1920&q=75" alt="" />
+                <div className='flex items-start justify-center'>
+                    <img className='object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ffile-conventions-component-hierarchy.png&w=1920&q=75" alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
                     <h1 className='text-xl lg:text-2xl poppins-bold'>Measurable Impact</h1>
