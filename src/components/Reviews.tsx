@@ -40,6 +40,7 @@ function Reviews() {
                     ))
                 }
             </div>
+            
         </div>
     </div>
   )
