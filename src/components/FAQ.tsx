@@ -1,35 +1,28 @@
 import React from 'react'
-
+import { FaqConfig } from '@/config/FAQconfig';
 // import {Accordion, AccordionItem} from "@heroui/react";
 import {Accordion, AccordionItem} from "@heroui/accordion";
 function FAQ() {
-    const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
   return (
-    <div className='w-full px-4 container mx-auto lg:max-w-[70%] inter-medium space-y-4 grid lg:grid-cols-3 grid-cols-1 justify-between'>
-    <div>
-        <img className='rounded-full w-full items-center justify-end px-0 relative -top-20' src="https://jsmastery.com/_next/image?url=%2Fassets%2Fgeneral%2Fimages%2Fcharacter-1.webp&w=640&q=75" alt="" />
-    </div>
-    <div className='col-span-2'>
-    <Accordion variant="splitted">
-        <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
-            {defaultContent}
-        </AccordionItem>
-        <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-            {defaultContent}
-        </AccordionItem>
-        <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-            {defaultContent}
-        </AccordionItem>
-        <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-            {defaultContent}
-        </AccordionItem>
-        <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-            {defaultContent}
-        </AccordionItem>
+    <div className=''>
+        <div className='mx-auto space-y-6'>
+             <h1 className='text-center lg:text-7xl text-4xl inter-bold'>Frequently asked questions</h1>
+            <p className='text-center text-lg inter-medium px-3 lg:w-1/2 mx-auto'>We are here to help you with any questions you may have. If you don't find what you need, please contact us at Find Some quick answers to the most common questions.<br /><a className='text-blue-800 inter-bold underline' href="#">contact@localhost.com</a></p>
+        </div>
+    <div className='my-10 lg:my-20 w-full px-4 container mx-auto lg:max-w-[60%] inter-medium space-y-4 grid lg:grid-cols-3 grid-cols-1 justify-between'>
+    <div className='col-span-3'>
+    <Accordion variant="splitted" className="" showDivider={false}>
+        {
+            FaqConfig.map((FAQ) => (
+                <AccordionItem className='poppins-medium space-y-2 bg-white px-4 py-[6px] lg:px-10 rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] h-auto   dark:bg-gradient-to-t dark:from-[#4c4c4c] dark:to-[#191818] ' key={FAQ.id} aria-label={FAQ.question} title={FAQ.question}>
+                    <p className='inter-medium text-sm lg:text-[16px]'>{FAQ.description}</p>
+                </AccordionItem> 
+            ))
+        }
     </Accordion>
     </div>
     
+    </div>
     </div>
   )
 }
