@@ -101,6 +101,20 @@ export default function IndexPage() {
             <span className="inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 bottom-0 h-px w-full mx-auto bg-gradient-to-r from-transparent via-slate-950 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent"></span>
           </motion.button>
         </div>
+
+          <div className=" justify-center items-center pb-8 py-6 space-y-6">
+              <p className="text-center">Trusted by Founders and Entrepreneurs from all over the world</p>
+              <div className="flex gap-2 justify-center items-center">
+                <img className="w-[46px] cursor-pointer ring-2 ring-gray-200 relative left-9 rounded-full shadow-md shadow-neutral-950 hover:z-50 hover:scale-[1.08] duration-300" src="https://randomuser.me/api/portraits/men/6.jpg" alt="" />
+                <img className="w-[46px] cursor-pointer ring-2 ring-gray-200 relative left-6 rounded-full shadow-md shadow-neutral-950 hover:z-50 hover:scale-[1.08] duration-300" src="https://randomuser.me/api/portraits/women/7.jpg" alt="" />
+                <img className="w-[46px] cursor-pointer ring-2 ring-gray-200 relative left-3 rounded-full shadow-md shadow-neutral-950 hover:z-50 hover:scale-[1.08] duration-300" src="https://randomuser.me/api/portraits/men/14.jpg" alt="" />
+                <img className="w-[46px] cursor-pointer ring-2 ring-gray-200 relative rounded-full shadow-md shadow-neutral-950 hover:z-50 hover:scale-[1.08] duration-300" src="https://randomuser.me/api/portraits/women/13.jpg" alt="" />
+                <img className="w-[46px] cursor-pointer ring-2 ring-gray-200 relative -left-3 rounded-full shadow-md shadow-neutral-950 hover:z-50 hover:scale-[1.08] duration-300" src="https://randomuser.me/api/portraits/men/8.jpg" alt="" />
+                <img className="w-[46px] cursor-pointer ring-2 ring-gray-200 relative -left-6 rounded-full shadow-md shadow-neutral-950 hover:z-50 hover:scale-[1.08] duration-300" src="https://randomuser.me/api/portraits/women/11.jpg" alt="" />
+                <img className="w-[46px] cursor-pointer ring-2 ring-gray-200 relative -left-9 rounded-full shadow-md shadow-neutral-950 hover:z-50 hover:scale-[1.08] duration-300" src="https://randomuser.me/api/portraits/men/10.jpg" alt="" />
+              </div>
+          </div>
+
         {/* HERO SECTION MAI IMAGE COMPONENT */}
         <div className="py-10">
             <HeroImageComponent />
@@ -110,3 +124,9 @@ export default function IndexPage() {
         
   );
 }
+
+
+
+
+
+
