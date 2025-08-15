@@ -45,7 +45,7 @@ export default function IndexPage() {
           <p className="px-2 py-4 lg:w-2/3 mx-auto Inter-medium lg:py-0 text-[17px] lg:text-lg ">Everything AI seamlessly integrated all the modern AI generation tools into one platform so that you can generate content with a single click.Generate images with text.</p>
         </div>
               <br /> <br />
-        <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-10 py-5 lg:py-10 ">
+        <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-4 py-3 lg:py-1">
           <motion.button
             initial={{
               scale: 0.98,
@@ -102,7 +102,7 @@ export default function IndexPage() {
           </motion.button>
         </div>
 
-          <div className=" justify-center items-center pb-8 py-6 space-y-6">
+          <div className=" justify-center items-center pb-8 py-10 space-y-2">
               <p className="text-center Inter-medium">Trusted by Founders and Entrepreneurs from all over the world</p>
               <div className="flex gap-2 justify-center items-center">
                 <img className="w-[46px] cursor-pointer ring-2 ring-gray-200 relative left-9 rounded-full shadow-md shadow-neutral-950 hover:z-50 hover:scale-[1.08] duration-300" src="https://randomuser.me/api/portraits/men/6.jpg" alt="" />
