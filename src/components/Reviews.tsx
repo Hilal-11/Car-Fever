@@ -5,11 +5,11 @@ function Reviews() {
   return (
     <div className='container text-center mx-auto py-20 container px-3'>
         <div className='flex justify-center items-center'>
-            <h3 className="dark:text-black bg-white flex gap-2 justify-center items-center shadow-sm shadow-gray-400 rounded-full px-8 py-1 inter-bold text-sm"><span><PiCubeDuotone /></span>Reviews</h3>
+            <h3 className="dark:text-black bg-white flex gap-2 justify-center items-center shadow-sm shadow-gray-400 rounded-full px-8 py-1 Inter-bold text-sm"><span><PiCubeDuotone /></span>Reviews</h3>
         </div>
         <div className='text-center space-y-3 my-5'>
-            <h1 className='text-4xl lg:text-7xl inter-bold text-gray-800 dark:text-white '>Loved by people all over the world</h1>
-            <p className='text-sm lg:text-lg lg:w-2/3 mx-auto inter-medium'>Our customers span every corner of the globe, and their stories speak louder than anything we could say. From first-time users to long-time supporters, each review is a reminder of why we do what we do.</p>
+            <h1 className='text-4xl lg:text-7xl Inter-bold text-gray-800 dark:text-white '>Loved by people all over the world</h1>
+            <p className='text-[18px] lg:text-lg lg:w-2/3 mx-auto Inter-medium px-1 py-2'>Our customers span every corner of the globe, and their stories speak louder than anything we could say. From first-time users to long-time supporters, each review is a reminder of why we do what we do.</p>
         </div>
 
 
@@ -28,12 +28,12 @@ function Reviews() {
                                  <img className='w-[38px] rounded-full' src={review.reviewerImage} alt="" />
                                </div>
                                 <div className='py-2'>
-                                    <p className='text-left inter-bold text-sm'>{review.reviewerName}</p>
-                                    <p className='text-left inter-medium text-sm'>{review.reviewerRole}</p>
+                                    <p className='text-left Inter-bold text-sm'>{review.reviewerName}</p>
+                                    <p className='text-left Inter-medium text-sm'>{review.reviewerRole}</p>
                                 </div>
                             </div>
                             
-                            <div className='py-2 px-4 inter-medium'>
+                            <div className='py-2 px-4 Inter-medium'>
                                 <p className='text-left text-[16px]'>{review.description}</p>
                             </div>
                         </div>
