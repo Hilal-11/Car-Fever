@@ -26,17 +26,17 @@ function App() {
           <div className="relative my-4 inset-0 w-full py-10 lg:py-20 h-auto justify-center ">
               <div className="container mx-auto">
                 <div className="text-center space-y-4">
-                  <h1 className="inter-extrabold text-4xl lg:text-7xl px-10">Trusted by the Best Companies</h1>
-                  <p className="inter-regular text-sm lg:text-lg px-8 lg:w-1/2 mx-auto">From innovative startups to global enterprises, Prime Deck has become the preferred platform for leaders in technology, finance, healthcare, and beyond.</p>
-                  <p className="text-center text-[15px] inter-bold py-6">Over 50+ business trust us</p>
+                  <h1 className="Inter-bold text-4xl lg:text-7xl px-10">Trusted by the Best Companies</h1>
+                  <p className="Inter-medium text-[16px] lg:text-lg px-8 lg:w-1/2 mx-auto">From innovative startups to global enterprises, Prime Deck has become the preferred platform for leaders in technology, finance, healthcare, and beyond.</p>
+                  <p className="text-center text-[17px] Inter-bold py-6">Over 50+ business trust us</p>
                 </div>
               </div>
               <div className="flex gap-10 justify-center items-center flex-wrap px-4">
                 {
                   companiesData.map((item) => (
-                    <div className="flex items-end justify-center gap-1 inter-medium" key={item.id}>
+                    <div className="flex items-end justify-center gap-1 Inter-medium" key={item.id}>
                       <span className="text-xl lg:text-3xl">{item.logo}</span>
-                      <span className="text-sm">{item.name}</span>
+                      <span className="text-[16px]">{item.name}</span>
                     </div>
                   ))
                 }
