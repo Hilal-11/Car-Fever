@@ -15,7 +15,7 @@ function FAQ() {
         {
             FaqConfig.map((FAQ) => (
                 <AccordionItem className=' Inter-medium space-y-2 bg-white px-4 py-[6px] lg:px-10 rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] h-auto dark:bg-gradient-to-t dark:from-[#4c4c4c] dark:to-[#191818]' key={FAQ.id} aria-label={FAQ.question} title={FAQ.question}>
-                    <p className='Inter-medium text-neutral-700 text-[16px] lg:text-[16px]'>{FAQ.description}</p>
+                    <p className='Inter-medium text-[16px] lg:text-[16px]'>{FAQ.description}</p>
                 </AccordionItem> 
             ))
         }
