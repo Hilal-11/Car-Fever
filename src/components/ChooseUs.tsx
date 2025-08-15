@@ -18,7 +18,7 @@ function ChooseUs() {
           className='grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 mx-auto  py-6 px-3 relative'
         >
             <motion.div 
-              className='lg:row-span-2 lg:h-auto h-auto w-full bg-zinc-100 dark:bg-neutral-900 rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
+              className='lg:row-span-2 lg:h-[810px] h-[400px] lg:overflow-hidden overflow-scroll w-full bg-zinc-100 dark:bg-neutral-900 rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
                 hover:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]
               dark:shadow-gray-950 '
               initial={{ opacity: 0, y: 100, scale: 0.9, filter: "blur(4px)" }}
@@ -28,7 +28,9 @@ function ChooseUs() {
               whileHover={{ scale: 1.02,transition: { duration: 0.3 }
               }}
             >   
-              
+              <div className='py-2'>
+                <img className=' object-cover' src="https://www.motia.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FtrelloFlow.d1930463.avif&w=640&q=75&dpl=dpl_9rrJQBh2cpkrN1Q7dqErBCJnzfyK" alt="ERROR" />
+              </div>
                 
             </motion.div>
             <motion.div 
