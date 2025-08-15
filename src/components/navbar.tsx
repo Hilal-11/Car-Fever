@@ -49,14 +49,14 @@ export const Navbar = () => {
             href="/"
           >
             {/* <Logo /> */}
-            <p className="lg:text-xl inter-bold">PrimeDeck</p>
+            <p className="lg:text-xl Inter-bold text-[16px] ">Primedeck</p>
           </Link>
         </NavbarBrand>
-        <div className="px-10 hidden lg:flex gap-6 justify-start ml-2 inter-medium">
+        <div className="px-10 hidden lg:flex gap-6 justify-start ml-2 Inter-medium text-[15px] ">
           {siteConfig.navItems.map((item) => (
             <NavbarItem className="" key={item.href}>
               <Link
-                className="text-neutral-500 text-[15px] roboto-regular"
+                className="text-neutral-500 text-[16px] Inter-medium  "
                 href={item.href}
               >
                 {item.label}
@@ -88,7 +88,7 @@ export const Navbar = () => {
     </div>
 
       <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+        <div className="mx-4 mt-2 flex flex-col gap-2 Inter-medium text-[16px] ">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
