@@ -71,7 +71,8 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-4">
-          <Link isExternal href={siteConfig.links.twitter} title="Twitter">
+          <button className="cursor-pointer text-[16px] Inter-medium text-neutral-500">Login</button>
+          <Link isExternal href={siteConfig.links.github} title="Twitter">
             <RiGithubFill size={22} className="text-default-500" />
           </Link>
           <Link isExternal href={siteConfig.links.github} title="GitHub">
