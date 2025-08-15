@@ -19,7 +19,11 @@
 .scroll-verticallyUp {
   animation: scrollUp 12s linear infinite;
 }
-
+@media (min-width: 1024px) {
+  .heading-lg {
+    line-height: 7.2rem;
+  }
+}
 @keyframes scrollUp {
   0% {
     transform: translateY(0%);

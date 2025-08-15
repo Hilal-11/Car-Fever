@@ -5,16 +5,8 @@ import { FaGithub, FaTwitter, FaLinkedin , FaFacebook } from "react-icons/fa";
 // import { Link as ScrollLink } from 'react-scroll';
 function Footer() {
   return (
-    <div className=' w-full h-auto lg:py-10 py-16'>
+    <div className=' w-full h-auto lg:py-10 my-20'>
         <div className='container px-4 lg:max-w-[80%] mx-auto lg:py-6'>
-            {/* First */}
-            <div className='text-center space-y-0'>
-                <h1 className='text-6xl lg:text-9xl Inter-bold'>LET'S TALK</h1>
-                <h2 className='text-xl lg:text-7xl Inter-bold break-words underline text-slate-950'>hellocodedev404@gmail.com</h2>
-
-            </div> <br /> <br />
-
-          {/* Next box */}
           <div className='grid lg:grid-cols-5 grid-cols-2 justify-between lg:gap-10 py-10'>
             <div className=' col-span-2 mx-auto'>
               <h1 className='text-3xl Inter-bold '>Prime Deck</h1>
