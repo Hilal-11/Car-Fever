@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { motion } from 'motion/react'
 import IndexPage from "@/pages/index";
-import DocsPage from "@/pages/docs";
+import Features from "@/pages/features";
 import PricingPage from "@/pages/pricing";
 import BlogPage from "@/pages/blog";
 import AboutPage from "@/pages/about";
@@ -54,7 +54,7 @@ function App() {
         </>
         } path="/">
     </Route>
-      <Route element={<DocsPage />} path="/docs" />
+      <Route element={<Features />} path="/features" />
       <Route element={<PricingPage />} path="/pricing" />
       <Route element={<BlogPage />} path="/blog" />
       <Route element={<AboutPage />} path="/about" />
