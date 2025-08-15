@@ -24,6 +24,11 @@
     line-height: 7.2rem;
   }
 }
+@media (min-width: 1024px) {
+  .heading-lg2 {
+    line-height: 5rem;
+  }
+}
 @keyframes scrollUp {
   0% {
     transform: translateY(0%);
