@@ -9,9 +9,9 @@ function ChooseUs() {
     <div className='container mx-auto py-5'>
         <div>
             <div className='flex justify-center mx-auto'>
-              <h3 className='text-center bg-white flex gap-2 justify-center items-center shadow-sm shadow-gray-400 rounded-full px-8 py-1 inter-bold text-sm'><span><PiCubeDuotone /></span>Choose Us</h3>
+              <h3 className='text-center bg-white flex gap-2 justify-center items-center shadow-sm shadow-gray-400 rounded-full px-8 py-1 Inter-bold text-sm'><span><PiCubeDuotone /></span>Choose Us</h3>
             </div>
-            <h1 className='text-4xl lg:text-7xl inter-bold text-center'>Why you chosse us</h1>
+            <h1 className='text-4xl lg:text-7xl Inter-bold text-center'>Why you chosse us</h1>
         </div>
         <div 
           id='bento-grid'
@@ -45,8 +45,8 @@ function ChooseUs() {
                     <img className='rounded-t-xl object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fserver-rendering-with-streaming.png&w=1920&q=75" alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
-                    <h1 className='text-xl lg:text-2xl poppins-bold'>React Server Components</h1>
-                    <p className='text-[12px] lg:text-sm poppins-medium lg:pr-12'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eligendi nostrum delectus voluptatum, consectetur.</p>
+                    <h1 className='text-xl lg:text-2xl Inter-bold'>React Server Components</h1>
+                    <p className='text-[16px] lg:text-[16px] Inter-medium lg:pr-12'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eligendi nostrum delectus voluptatum, consectetur.</p>
                 </div>
             </motion.div>
               
@@ -65,8 +65,8 @@ function ChooseUs() {
                     <img className='object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fnextjs%2Fspheres-light.png&w=300&q=100" alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
-                    <h1 className='text-xl lg:text-2xl poppins-bold'>Route Handlers and Middleware</h1>
-                    <p className='text-[12px] lg:text-sm poppins-medium lg:pr-12'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eligendi nostrum delectus voluptatum, consectetur.</p>
+                    <h1 className='text-xl lg:text-2xl Inter-bold'>Route Handlers and Middleware</h1>
+                    <p className='text-[16px] lg:text-[16px] Inter-medium lg:pr-12'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eligendi nostrum delectus voluptatum, consectetur.</p>
                 </div>
             </motion.div>
 
@@ -85,8 +85,8 @@ function ChooseUs() {
                     <img className='object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fnested-file-conventions-component-hierarchy.png&w=1920&q=75" alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
-                    <h1 className='text-xl lg:text-2xl poppins-bold'>Dynamic HTML Streaming</h1>
-                    <p className='text-[12px] lg:text-sm poppins-medium lg:pr-12'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eligendi nostrum delectus voluptatum, consectetur.</p>
+                    <h1 className='text-xl lg:text-2xl Inter-bold'>Dynamic HTML Streaming</h1>
+                    <p className='text-[16px] lg:text-[16px] Inter-medium lg:pr-12'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eligendi nostrum delectus voluptatum, consectetur.</p>
                 </div>
             </motion.div>
 
@@ -105,8 +105,8 @@ function ChooseUs() {
                     <img className='object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ffile-conventions-component-hierarchy.png&w=1920&q=75" alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
-                    <h1 className='text-xl lg:text-2xl poppins-bold'>Measurable Impact</h1>
-                    <p className='text-[12px] lg:text-sm poppins-medium lg:pr-12'>Track performance, uncover insights, and achieve data-backed growth connect tools, teams, and workflows with intelligent automation.</p>
+                    <h1 className='text-xl lg:text-2xl Inter-bold'>Measurable Impact</h1>
+                    <p className='text-[16px] lg:text-[16px] Inter-medium lg:pr-12'>Track performance, uncover insights, and achieve data-backed growth connect tools, teams, and workflows with intelligent automation.</p>
                 </div>
             </motion.div>
         </div>
