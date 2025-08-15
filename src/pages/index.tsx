@@ -41,10 +41,10 @@ export default function IndexPage() {
 
         </div> <br /> <br />
         <div className="text-center ">
-          <h1 className="text-3xl lg:text-[6.7rem] Inter-bold leading-tight lg:leading-none">Generate Images, Text and Videos with AI</h1>
-          <p className="px-2 py-4 lg:w-2/3 mx-auto Inter-medium lg:py-6 text-[17px] lg:text-lg ">Everything AI seamlessly integrated all the modern AI generation tools into one platform so that you can generate content with a single click.Generate images with text.</p>
+          <h1 className=" text-3xl lg:text-[6.7rem] Inter-bold heading-lg">Generate Images, Text and Videos with AI</h1>
+          <p className="px-2 py-4 lg:w-2/3 mx-auto Inter-medium lg:py-0 text-[17px] lg:text-lg ">Everything AI seamlessly integrated all the modern AI generation tools into one platform so that you can generate content with a single click.Generate images with text.</p>
         </div>
-
+              <br /> <br />
         <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-10 py-5 lg:py-10 ">
           <motion.button
             initial={{
@@ -61,7 +61,7 @@ export default function IndexPage() {
             transition={{
               duration: 0.2,
             }}
-          className=" cursor-pointer Inter-bold bg-neutral-900 dark:bg-white dark:text-black px-14 py-[8px] rounded-lg text-white shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">Start for free</motion.button>
+          className=" cursor-pointer Inter-bold bg-neutral-900 dark:bg-white dark:text-black px-14 py-[9px] rounded-lg text-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">Start for free</motion.button>
           <motion.button
             initial={{
               scale: 0.98,
@@ -79,7 +79,7 @@ export default function IndexPage() {
             transition={{
               duration: 0.2,
             }}
-          className=" cursor-pointer relative Inter-bold cursor-pointer dark:bg-zinc-900 dark:text-white bg-white px-14 py-[8px] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex items-center gap-2">See Our Services <motion.span
+          className=" cursor-pointer relative Inter-bold cursor-pointer dark:bg-zinc-900 dark:text-white bg-white px-14 py-[9px] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex items-center gap-2">See Our Services <motion.span
             whileHover={{
               y: -10,
               x: 100,
