@@ -19,8 +19,9 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import { RiGithubFill } from "react-icons/ri";
 import { RiTwitterXFill } from "react-icons/ri";
 import {motion} from 'motion/react'
-
+import { useNavigate } from "react-router-dom";
 export const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <HeroUINavbar  position="sticky" className="h-0">
       <div className="relative w-full flex justify-center items-center">
@@ -71,7 +72,7 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-4">
-          <button className="cursor-pointer text-[16px] Inter-medium text-neutral-500">Login</button>
+          <button className="cursor-pointer text-[16px] Inter-medium text-neutral-500" onClick={() => { navigate('/auth/login')} }>Login</button>
           <Link isExternal href={siteConfig.links.github} title="Twitter">
             <RiGithubFill size={22} className="text-default-500" />
           </Link>

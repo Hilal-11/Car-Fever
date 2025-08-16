@@ -13,6 +13,7 @@ import Reviews from "./components/Reviews";
 import BookcallAndSignupBox from "./components/BookcallAndSignupBox";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import Signup from './auth/Signup';
 function App() {
 
   
@@ -58,6 +59,8 @@ function App() {
       <Route element={<PricingPage />} path="/pricing" />
       <Route element={<BlogPage />} path="/blog" />
       <Route element={<AboutPage />} path="/about" />
+      <Route element={<Signup />} path="/auth/login" />
+
     </Routes>
     <Footer />
     </>

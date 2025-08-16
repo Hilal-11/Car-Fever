@@ -11,7 +11,7 @@ function ChooseUs() {
             <div className='flex justify-center mx-auto'>
               <h3 className='text-center bg-white flex gap-2 justify-center items-center shadow-sm shadow-gray-400 rounded-full px-8 py-1 Inter-bold text-sm'><span><PiCubeDuotone /></span>Choose Us</h3>
             </div>
-            <h1 className='text-4xl lg:text-7xl Inter-bold text-center'>Why you chosse us</h1>
+            <h1 className='text-4xl lg:text-7xl Inter-bold text-center'>Why you choose us</h1>
         </div>
         <div 
           id='bento-grid'
