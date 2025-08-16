@@ -13,6 +13,8 @@ import {
 import { link as linkStyles } from "@heroui/theme";
 import clsx from "clsx";
 
+import { SignedIn, SignedOut, SignInButton, UserButton , UserProfile } from '@clerk/clerk-react';
+
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 
@@ -20,6 +22,7 @@ import { RiGithubFill } from "react-icons/ri";
 import { RiTwitterXFill } from "react-icons/ri";
 import {motion} from 'motion/react'
 import { useNavigate } from "react-router-dom";
+import Signup from "@/auth/Signup";
 export const Navbar = () => {
   const navigate = useNavigate()
   return (
@@ -68,11 +71,12 @@ export const Navbar = () => {
   
 
       <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
+        className="hidden sm:flex basis-1/5 sm:basis-full items-center"
         justify="end"
       >
+        <button onClick={() => { navigate('/auth/profile')}}  className="space-x-2 cursor-pointer text-[16px] Inter-medium text-neutral-500"><Signup /></button>
+
         <NavbarItem className="hidden sm:flex gap-4">
-          <button className="cursor-pointer text-[16px] Inter-medium text-neutral-500" onClick={() => { navigate('/auth/login')} }>Login</button>
           <Link isExternal href={siteConfig.links.github} title="Twitter">
             <RiGithubFill size={22} className="text-default-500" />
           </Link>
@@ -86,13 +90,17 @@ export const Navbar = () => {
         <NavbarMenuToggle />
         <ThemeSwitch />
       </NavbarContent>
+
       </motion.div>
     </div>
 
       <NavbarMenu>
+
+          
         <div className="mx-4 mt-2 flex flex-col gap-2 Inter-medium text-[16px] ">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
+
               <Link
                 color={
                   index === 2
@@ -108,7 +116,10 @@ export const Navbar = () => {
               </Link>
             </NavbarMenuItem>
           ))}
-        </div>
+          <div className="flex justify-end ">
+            <button onClick={() => { navigate('/auth/profile')}} className="my-6 space-x-2 cursor-pointer text-[20px] Inter-medium absolute -top-2"><Signup /></button>
+          </div>
+        </div> 
       </NavbarMenu>
     </HeroUINavbar>
   );
