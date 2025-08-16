@@ -1,6 +1,5 @@
 import React from 'react'
-import { SignedIn, SignedOut, SignInButton, UserButton , UserProfile } from '@clerk/clerk-react';
-import DefaultLayout from '@/layouts/default';
+import { SignedOut , UserProfile } from '@clerk/clerk-react';
 import { useNavigate } from 'react-router-dom';
 import { MdKeyboardBackspace } from "react-icons/md";
 function Profile() {
