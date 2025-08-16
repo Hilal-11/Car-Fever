@@ -74,7 +74,7 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full items-center"
         justify="end"
       >
-        <button onClick={() => { navigate('/auth/profile')}}  className="space-x-2 cursor-pointer text-[16px] Inter-medium text-neutral-500"><Signup /></button>
+        <button className="space-x-2 cursor-pointer text-[16px] Inter-medium text-neutral-500"><Signup /></button>
 
         <NavbarItem className="hidden sm:flex gap-4">
           <Link isExternal href={siteConfig.links.github} title="Twitter">
@@ -109,7 +109,7 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                 }
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}
@@ -117,7 +117,7 @@ export const Navbar = () => {
             </NavbarMenuItem>
           ))}
           <div className="flex justify-end ">
-            <button onClick={() => { navigate('/auth/profile')}} className="my-6 space-x-2 cursor-pointer text-[20px] Inter-medium absolute -top-2"><Signup /></button>
+            <button className="my-6 space-x-2 cursor-pointer text-[20px] Inter-medium absolute -top-2"><Signup /></button>
           </div>
         </div> 
       </NavbarMenu>
