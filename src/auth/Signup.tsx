@@ -2,7 +2,7 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-reac
 
 export default function Signup() {
   return (
-    <header>
+    <header className='flex items-center justify-center'>
       <SignedOut>
         <SignInButton />
       </SignedOut>
