@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes , useLocation } from "react-router-dom";
 import { motion } from 'motion/react'
 import IndexPage from "@/pages/index";
 import Features from "@/pages/features";
@@ -13,10 +13,12 @@ import Reviews from "./components/Reviews";
 import BookcallAndSignupBox from "./components/BookcallAndSignupBox";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
-import Signup from './auth/Signup';
+import Profile from "./pages/Profile";
 function App() {
 
-  
+  const location = useLocation();
+  const hideFooterRoutes = ["/auth/profile"];
+  const shouldShowFooter = !hideFooterRoutes.includes(location.pathname);
 
   return (
     <>
@@ -59,10 +61,10 @@ function App() {
       <Route element={<PricingPage />} path="/pricing" />
       <Route element={<BlogPage />} path="/blog" />
       <Route element={<AboutPage />} path="/about" />
-      <Route element={<Signup />} path="/auth/login" />
+      <Route element={ <Profile />} path="/auth/profile"/>
 
     </Routes>
-    <Footer />
+    { shouldShowFooter && <Footer />}
     </>
   );
 }
