@@ -38,4 +38,52 @@
   }
 }
 
+.rotate-animation {
+  animation: rotate360def 16s linear infinite;
+}
+@keyframes rotate360def {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate-animation2 {
+  animation: rotate360def2 12s linear infinite;
+}
+@keyframes rotate360def2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation3 {
+  animation: rotate360def3 4s linear infinite;
+  animation-direction: reverse;
+}
+@keyframes rotate360def3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.gradient-border {
+  border: 40px solid transparent;
+  border-radius: 9999px; /* fully rounded */
+  background: linear-gradient(135deg, #fb923c, #ec4899, #fde68a) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
 @config "../../tailwind.config.js"
