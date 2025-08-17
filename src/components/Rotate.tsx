@@ -17,7 +17,7 @@ import {
 function Rotate() {
   return (
     <div className='flex justify-center items-center py-4'>
-        <div className='rotate-animation relative w-[380px] h-[380px] rounded-full border-[40px] border-orange-300 flex items-center justify-center'> 
+        <div className='rotate-animation relative w-[340px] lg:w-[380px] h-[340px] lg:h-[380px] rounded-full border-[40px] border-orange-300 flex items-center justify-center'> 
             <span className='text-2xl absolute -top-14 bg-zinc-800 text-gray-300 p-2 rounded-full z-50'><SiReact /></span>
             <span className='text-2xl absolute -left-14 bg-zinc-800 text-gray-300 p-2 rounded-full z-50'><SiNextdotjs /></span>
             <span className='text-2xl absolute -right-14 bg-zinc-800 text-gray-300 p-2 rounded-full z-50'><SiTailwindcss /></span>
