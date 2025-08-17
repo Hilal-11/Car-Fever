@@ -10,7 +10,7 @@ import {
 } from "@heroui/navbar";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-
+import { SiPrimefaces } from "react-icons/si";
 import { RiGithubFill } from "react-icons/ri";
 import { RiTwitterXFill } from "react-icons/ri";
 import {motion} from 'motion/react'
@@ -35,7 +35,7 @@ export const Navbar = () => {
           delay: 0.2,
 
         }}
-      className="absolute top-3 lg:top-6 w-full flex justify-between items-center bg-neutral-100 dark:bg-neutral-950 rounded-full py-3 lg:py-4 px-2 lg:px-10 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
+      className="absolute top-3 lg:top-6 w-full flex justify-between items-center bg-neutral-100 dark:bg-neutral-950 rounded-full py-3 lg:py-4 px-2 lg:px-10 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] z-30">
 
         <span className="inline-block absolute inset-x-0  opacity-100 transition-opacity duration-300 bottom-0 h-px w-full mx-auto bg-gradient-to-r from-transparent via-slate-500 to-transparent"></span>
 
@@ -46,7 +46,7 @@ export const Navbar = () => {
             href="/"
           >
             {/* <Logo /> */}
-            <p className="lg:text-xl Inter-bold text-[16px] ">Primedeck</p>
+            <p className="flex gap-2 items-center justify-center lg:text-xl Inter-bold text-[16px] "><span className="text-2xl lg:text-3xl"><SiPrimefaces /></span>Primedeck</p>
           </Link>
         </NavbarBrand>
         <div className="px-10 hidden lg:flex gap-6 justify-start ml-2 Inter-medium text-[15px] ">
@@ -87,10 +87,8 @@ export const Navbar = () => {
       </motion.div>
     </div>
 
-      <NavbarMenu>
-
-          
-        <div className="mx-4 mt-2 flex flex-col gap-2 Inter-medium text-[16px] ">
+      <NavbarMenu className="absolute inset-0 z-30 py-22">
+        <div className="mx-4 mt-2 flex flex-col gap-2 Inter-medium text-[16px]">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
 
@@ -110,9 +108,9 @@ export const Navbar = () => {
             </NavbarMenuItem>
           ))}
           <div className="flex justify-end ">
-            <button className="my-6 space-x-2 cursor-pointer text-[20px] Inter-medium absolute -top-2"><Signup /></button>
-          </div>
+            <button className="my-6 space-x-2 cursor-pointer text-[20px] Inter-medium relative -top-14"><Signup /></button>
         </div> 
+      </div> <br />
       </NavbarMenu>
     </HeroUINavbar>
   );
