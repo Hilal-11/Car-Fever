@@ -14,11 +14,18 @@ import BookcallAndSignupBox from "./components/BookcallAndSignupBox";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Profile from "./pages/Profile";
+import PageNotFound from "./pages/PageNotFound";
 function App() {
 
   const location = useLocation();
   const hideFooterRoutes = ["/auth/profile"];
   const shouldShowFooter = !hideFooterRoutes.includes(location.pathname);
+
+
+  const hideFooterOn = ["/404", "*"]; 
+  const isNotFound = location.pathname !== "/" && 
+                     !["/features","/pricing","/blog","/about","/auth/profile"].includes(location.pathname);
+
 
   return (
     <>
@@ -34,10 +41,10 @@ function App() {
                   <p className="text-center text-[17px] Inter-bold py-6">Over 50+ business trust us</p>
                 </div>
               </div>
-              <div className="flex gap-10 justify-center items-center flex-wrap px-4">
+              <div className="flex lg:gap-10 gap-6 justify-center items-center flex-wrap px-4">
                 {
                   companiesData.map((item) => (
-                    <div className="flex items-end justify-center gap-1 Inter-medium" key={item.id}>
+                    <div className="flex items-end justify-center lg:gap-1 Inter-medium" key={item.id}>
                       <span className="text-xl lg:text-3xl">{item.logo}</span>
                       <span className="text-[16px]">{item.name}</span>
                     </div>
@@ -62,9 +69,10 @@ function App() {
       <Route element={<BlogPage />} path="/blog" />
       <Route element={<AboutPage />} path="/about" />
       <Route element={ <Profile />} path="/auth/profile"/>
+      <Route element={ <PageNotFound />} path="*"/>
 
     </Routes>
-    { shouldShowFooter && <Footer />}
+    { !isNotFound && shouldShowFooter && <Footer />}
     </>
   );
 }
