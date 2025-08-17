@@ -87,7 +87,7 @@ export const Navbar = () => {
       </motion.div>
     </div>
 
-      <NavbarMenu className="absolute inset-0 z-30 py-22">
+      <NavbarMenu className="">
         <div className="mx-4 mt-2 flex flex-col gap-2 Inter-medium text-[16px]">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
