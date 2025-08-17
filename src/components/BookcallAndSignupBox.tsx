@@ -1,5 +1,5 @@
 import React from 'react'
-import { BiLogoSlack } from "react-icons/bi";
+import { SiPrimefaces } from "react-icons/si";
 function BookcallAndSignupBox() {
   return (
     <div className='flex justify-center items-center py-10 container mx-auto lg:max-w-[70%] px-4'>
@@ -13,7 +13,7 @@ function BookcallAndSignupBox() {
                 </div>
             </div>
             <div className='flex items-center lg:justify-center justify-center lg:pr-10'>
-                <span className='text-[20rem] lg:text-[25rem]'><BiLogoSlack /></span>
+                <span className='text-[20rem] lg:text-[25rem]'><SiPrimefaces /></span>
             </div>
         </div>
     </div>
