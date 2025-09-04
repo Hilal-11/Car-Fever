@@ -3,7 +3,12 @@ import DefaultLayout from "@/layouts/default";
 import FAQ from '../components/FAQ';
 import DottedMap from 'dotted-map';
 import Rotate from "@/components/Rotate";
+import { useEffect } from "react";
 export default function Features() {
+
+  useEffect(() => {
+    window.scrollTo(0 , 0)
+  }, [])
 
   const theme = localStorage.getItem('heroui-theme')
   const map = new DottedMap({
@@ -18,7 +23,7 @@ export default function Features() {
 // Get SVG string
   const svg = map.getSVG({
     radius: 0.2,
-    color: theme === 'dark' ? '#404040' : '#d1d5dc',
+    color: theme === 'dark' ? '#404040' : '#404040',
     shape: 'circle',
   });
 
@@ -57,7 +62,7 @@ export default function Features() {
               </div>
 
 
-              <div className="lg:h-[400px] h-[360px] shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] bg-white dark:bg-neutral-950 rounded-2xl overflow-hidden">
+              <div className="lg:h-[400px] h-[360px] shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] bg-white dark:bg-neutral-950 rounded-2xl mask-b-from-20% to-50% overflow-hidden">
                 <div className="py-4 px-4">
                    <h1 className="lg:text-2xl text-2xl Inter-bold ">Modern & Clean Design</h1>
                     <p className="text-[16px] Inter-medium py-1">A minimal yet striking design style that enhances your brand image and communicates professionalism without clutter.</p>
@@ -74,9 +79,9 @@ export default function Features() {
                     <div className=""><img className="lg:h-[400px] rounded-t-2xl lg:rounded-tl-2xl lg:rounded-bl-2xl" src="https://res.cloudinary.com/dou5rypdf/image/upload/v1754305606/Screenshot_2025-08-03_230628_wtc5r1.png" alt="" /></div>
                     <div className="py-4 px-4">
                       <h1 className="lg:text-2xl text-2xl Inter-bold ">Modern & Clean Design</h1>
-                      <p className="text-[16px] Inter-medium py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime beatae assumenda est veniam repellendus animi aperiam illo natus aut, eius explicabo eveniet ipsam repudiandae. Quas accusamus at eius quibusdam labore.</p>
+                      <p className="text-[16px] Inter-medium py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime beatae assumenda est veniam repellendus animi aperiam illo natus aut, eius explicabo eveniet ipsam repudiandae. Quas accusamus at eius quibusdam labore. <br /> Optimized code and performance-first practices mean your website loads instantly, improving user experience and SEO ranking.</p>
 
-                      <div className="flex justify-evenly mt-4 items-end lg:relative lg:top-20">
+                      <div className="flex justify-evenly mt-4 items-end lg:relative lg:top-10">
                         <button className="px-8 bg-zinc-100 dark:bg-neutral-900 dark:text-white lg:px-10 py-2 lg:py-3 rounded-2xl Inter-medium shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">Get Start</button>
 
                         <button className="px-8 bg-neutral-950 text-white dark:bg-white dark:text-black lg:px-10 py-2 lg:py-3 rounded-2xl Inter-medium shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">Talk to us</button>

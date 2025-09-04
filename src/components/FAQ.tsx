@@ -7,7 +7,7 @@ function FAQ() {
     <div className=''>
         <div className='mx-auto space-y-6'>
              <h1 className='text-center lg:text-7xl text-4xl Inter-bold'>Frequently asked questions</h1>
-            <p className='text-center text-lg Inter-medium px-3 lg:w-1/2 mx-auto'>We are here to help you with any questions you may have. If you don't find what you need, please contact us at Find Some quick answers to the most common questions.<br /><a className='text-slate-950 Inter-bold underline' href="#">contact@localhost.com</a></p>
+            <p className='text-center text-lg Inter-medium px-3 lg:w-1/2 mx-auto'>We are here to help you with any questions you may have. If you don't find what you need, please contact us at Find Some quick answers to the most common questions.<br /><a className='text-slate-950 dark:text-zinc-100 Inter-bold underline' href="#">hellocodedev404.com</a></p>
         </div>
     <div className='my-10 lg:my-20 w-full px-4 container mx-auto lg:max-w-[60%] Inter-medium space-y-4 grid lg:grid-cols-3 grid-cols-1 justify-between'>
     <div className='col-span-3'>

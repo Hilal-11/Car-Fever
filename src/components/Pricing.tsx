@@ -30,7 +30,7 @@ function Pricing() {
                     <button className='w-full py-2 rounded-full bg-black text-white dark:bg-white dark:text-black Inter-bold text-[16px]'>Buy Now</button>
                 </div>
             </div>
-            <div className='shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-auto rounded-2xl px-6 py-4 space-y-4 text-gray-300 bg-[linear-gradient(360deg,hsla(235,100%,78%,1)_0%,hsla(222,77%,33%,1)_100%)]' 
+            <div className='shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-auto rounded-2xl px-6 py-4 space-y-4 text-gray-300 bg-gradient-to-t from-[#456FE8] to-[#181E93]' 
             >
                 <div className=' text-left space-y-2 pb-6'>
                     <h1 className='text-lg Inter-bold'>{pricingConfig[1].pricingType}</h1>
