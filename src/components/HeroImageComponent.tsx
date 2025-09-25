@@ -1,5 +1,6 @@
 // import React, { useRef } from 'react'
 import { motion } from 'motion/react'
+import HeaderImage from '../../public/HeaderImage.png'
 // import { useScroll, useTransform } from 'framer-motion';
 function HeroImageComponent() {
 
@@ -39,7 +40,7 @@ function HeroImageComponent() {
     >   
         <div>
             <motion.img
-            className='rounded-xl w-full object-cover dark:mask-b-from-10 to-20' src="https://ai-saas-template-aceternity.vercel.app/_next/image?url=%2Fheader.png&w=1920&q=75" alt="Error" />
+            className='rounded-xl w-full object-cover dark:mask-b-from-10 to-20' src={HeaderImage} alt="Error" />
         </div>
     </motion.div>
 
