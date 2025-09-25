@@ -1,6 +1,6 @@
-import React, { useRef } from 'react'
+// import React, { useRef } from 'react'
 import { motion } from 'motion/react'
-import { useScroll, useTransform } from 'framer-motion';
+// import { useScroll, useTransform } from 'framer-motion';
 function HeroImageComponent() {
 
     // const containerRef = useRef<HTMLDListElement>(null);

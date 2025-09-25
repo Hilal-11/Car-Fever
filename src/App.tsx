@@ -1,5 +1,4 @@
 import { Route, Routes , useLocation } from "react-router-dom";
-import { motion } from 'motion/react'
 import IndexPage from "@/pages/index";
 import Features from "@/pages/features";
 import PricingPage from "@/pages/pricing";
@@ -22,7 +21,7 @@ function App() {
   const shouldShowFooter = !hideFooterRoutes.includes(location.pathname);
 
 
-  const hideFooterOn = ["/404", "*"]; 
+
   const isNotFound = location.pathname !== "/" && 
                      !["/features","/pricing","/blog","/about","/auth/profile"].includes(location.pathname);
 

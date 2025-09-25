@@ -1,4 +1,3 @@
-import React from 'react'
 import { PiCubeDuotone } from "react-icons/pi";
 import { pricingConfig } from "@/config/pricingConfig"
 import { FaCheckCircle } from "react-icons/fa";

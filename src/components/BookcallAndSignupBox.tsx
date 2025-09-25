@@ -1,4 +1,3 @@
-import React from 'react'
 import { SiPrimefaces } from "react-icons/si";
 function BookcallAndSignupBox() {
   return (

@@ -1,9 +1,9 @@
 interface Reviews {
-    id: String,
-    reviewerName: String,
-    reviewerImage: String,
-    description: String,
-    reviewerRole: String,
+    id: string,
+    reviewerName: string,
+    reviewerImage: string,
+    description: string,
+    reviewerRole: string,
 
 }
 export const reviewsConfig: Reviews[] = [

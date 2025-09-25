@@ -1,4 +1,3 @@
-import React from 'react'
 import { PiCubeDuotone } from "react-icons/pi";
 import { reviewsConfig } from '@/config/reviewConfig'
 function Reviews() {
@@ -25,7 +24,7 @@ function Reviews() {
                         <div key={index} className="px-2 py-3 scroll-verticallyUp lg:w-[340px] w-full rounded-3xl h-auto bg-white dark:bg-neutral-900 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
                             <div className='flex gap-3 pr-6 inter-bold  text-[14px] items-center' >
                                <div>
-                                 <img className='w-[38px] rounded-full' src={review.reviewerImage} alt="" />
+                                 <img className='w-[38px] rounded-full' src={review.reviewerImage} alt="Error" />
                                </div>
                                 <div className='py-2'>
                                     <p className='text-left Inter-bold text-sm'>{review.reviewerName}</p>

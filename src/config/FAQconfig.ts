@@ -1,8 +1,8 @@
 
 interface FAQ_Config {
-    id: String,
-    question: String,
-    description: String
+    id: string,
+    question: string,
+    description: string
 }
 export const FaqConfig: FAQ_Config[]= [
   {
