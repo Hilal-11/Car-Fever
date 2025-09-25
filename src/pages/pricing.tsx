@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Pricing from "@/components/Pricing";
 import Reviews from "@/components/Reviews";
 import DefaultLayout from "@/layouts/default";
