@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+.Inter-thin {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
 
 .Inter-medium {
   font-family: 'Inter', sans-serif;
