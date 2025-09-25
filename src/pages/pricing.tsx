@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Pricing from "@/components/Pricing";
 import Reviews from "@/components/Reviews";
 import DefaultLayout from "@/layouts/default";
@@ -8,6 +8,7 @@ export default function DocsPage() {
   useEffect(() => {
       window.scrollTo(0 , 0)
     }, [])
+
   return (
     <DefaultLayout>
       
@@ -17,6 +18,8 @@ export default function DocsPage() {
             <p className="pt-6 Inter-medium text-[16px] lg:px-20">At Prime Deck, we believe pricing should be simple, transparent, and built to support growth — not limit it. Whether you’re launching your first startup, managing a growing business, or running a large-scale enterprise, our plans are tailored to meet your needs at every stage. With no hidden fees, no long-term commitments, and the flexibility to upgrade or downgrade anytime.</p>
           </div>
           <Pricing />
+          {/* Pricing comparisions */}
+          
           <Reviews />
           <FAQ />
       </section>
