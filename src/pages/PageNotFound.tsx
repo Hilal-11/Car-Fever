@@ -1,10 +1,9 @@
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 function PageNotFound() {
 
   const theme = localStorage.getItem('heroui-theme')
-  const navigate = useNavigate('')
+  const navigate = useNavigate()
 
   return (
     <div className={theme==="dark" ? `bg-neutral-950 text-white w-full h-svh flex justify-center items-center` : `w-full h-svh flex justify-center items-center`}>

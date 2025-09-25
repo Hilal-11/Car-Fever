@@ -1,4 +1,3 @@
-import React from 'react'
 import { SignedOut , UserProfile } from '@clerk/clerk-react';
 import { useNavigate } from 'react-router-dom';
 import { MdKeyboardBackspace } from "react-icons/md";

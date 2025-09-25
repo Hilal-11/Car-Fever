@@ -1,5 +1,5 @@
 import { NavigationData , ServicesData } from "@/config/footerData";
-import { FaGithub, FaTwitter, FaLinkedin , FaFacebook } from "react-icons/fa";
+// import { FaGithub, FaTwitter, FaLinkedin , FaFacebook } from "react-icons/fa";
 
 // import { Link as ScrollLink } from 'react-scroll';
 function Footer() {

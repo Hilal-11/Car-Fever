@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactNode } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { SiNetflix } from "react-icons/si";

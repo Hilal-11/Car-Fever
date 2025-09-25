@@ -14,10 +14,10 @@ import { SiPrimefaces } from "react-icons/si";
 import { RiGithubFill } from "react-icons/ri";
 import { RiTwitterXFill } from "react-icons/ri";
 import {motion} from 'motion/react'
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import Signup from "@/auth/Signup";
 export const Navbar = () => {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   return (
     <HeroUINavbar  position="sticky" className="h-0">
       <div className="relative w-full flex justify-center items-center">

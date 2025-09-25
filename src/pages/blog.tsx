@@ -1,4 +1,3 @@
-import { title } from "@/components/primitives";
 import Reviews from "@/components/Reviews";
 import DefaultLayout from "@/layouts/default";
 import { motion } from 'motion/react'
