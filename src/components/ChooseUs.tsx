@@ -1,6 +1,6 @@
 
 import { PiCubeDuotone } from "react-icons/pi";
-// import { CodeBlock, dracula } from 'react-code-blocks';
+import placeholderImage from '../../public/placeholder.svg'
 import { motion } from 'motion/react'
 function ChooseUs() {
 
@@ -28,8 +28,8 @@ function ChooseUs() {
               whileHover={{ scale: 1.02,transition: { duration: 0.3 }
               }}
             >   
-              <div className='py-2'>
-                <img className=' object-cover' src="https://www.motia.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FtrelloFlow.d1930463.avif&w=640&q=75&dpl=dpl_9rrJQBh2cpkrN1Q7dqErBCJnzfyK" alt="ERROR" />
+              <div className='py-0'>
+                <img className='w-full h-[400px] rounded-t-lg object-cover' src={placeholderImage} alt="ERROR" />
               </div>
                 
             </motion.div>
@@ -44,7 +44,7 @@ function ChooseUs() {
               }}
             >
                 <div className='flex items-start justify-center items-center'>
-                    <img className='rounded-t-xl object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fserver-rendering-with-streaming.png&w=1920&q=75" alt="" />
+                    <img className='w-full h-[280px] rounded-t-xl object-cover' src={placeholderImage} alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
                     <h1 className='text-xl lg:text-2xl Inter-bold'>React Server Components</h1>
@@ -64,7 +64,7 @@ function ChooseUs() {
               }}
             >
                 <div className=' flex items-start justify-center'>
-                    <img className='object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fnextjs%2Fspheres-light.png&w=300&q=100" alt="" />
+                    <img className='w-full h-[280px] object-cover' src={placeholderImage} alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
                     <h1 className='text-xl lg:text-2xl Inter-bold'>Route Handlers and Middleware</h1>
@@ -84,7 +84,7 @@ function ChooseUs() {
               }}
             > 
                 <div className='flex items-start justify-center'>
-                    <img className='object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Fnested-file-conventions-component-hierarchy.png&w=1920&q=75" alt="" />
+                    <img className='w-full h-[280px] object-cover' src={placeholderImage} alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
                     <h1 className='text-xl lg:text-2xl Inter-bold'>Dynamic HTML Streaming</h1>
@@ -104,7 +104,7 @@ function ChooseUs() {
               }}
             > 
                 <div className='flex items-start justify-center'>
-                    <img className='object-cover' src="https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Fdocs%2Flight%2Ffile-conventions-component-hierarchy.png&w=1920&q=75" alt="" />
+                    <img className='w-full h-[280px] object-cover' src={placeholderImage} alt="" />
                 </div>
                 <div className='lg:px-6 px-4 py-2 space-y-1 '>
                     <h1 className='text-xl lg:text-2xl Inter-bold'>Measurable Impact</h1>
