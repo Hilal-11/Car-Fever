@@ -69,7 +69,7 @@ function Footer() {
       {/* LAST */}
 
       <div className=' py-2 flex justify-center items-center Inter-bold'>
-          <h1 className='text-center whitespace-normal leading-tight lg:text-[12rem] text-[6rem] bg-gradient-to-r from-gray-300 via-[#F8F8FF] to-neutral-200 inline-block text-transparent bg-clip-text'>PRIME DECK</h1>
+          <h1 className='text-center whitespace-normal leading-tight lg:text-[12rem] text-[6rem]  inline-block '>PRIME DECK</h1>
       </div>
         </div>
     </div>

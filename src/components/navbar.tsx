@@ -1,4 +1,5 @@
 import { Link } from "@heroui/link";
+import icon from '../../cooperation.png'
 import {
   Navbar as HeroUINavbar,
   NavbarBrand,
@@ -10,7 +11,6 @@ import {
 } from "@heroui/navbar";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { SiPrimefaces } from "react-icons/si";
 import { RiGithubFill } from "react-icons/ri";
 import { RiTwitterXFill } from "react-icons/ri";
 import {motion} from 'motion/react'
@@ -46,7 +46,7 @@ export const Navbar = () => {
             href="/"
           >
             {/* <Logo /> */}
-            <p className="flex gap-2 items-center justify-center lg:text-xl Inter-bold text-[16px] "><span className="text-2xl lg:text-3xl"><SiPrimefaces /></span>Primedeck</p>
+            <p className="flex gap-2 items-center justify-center lg:text-xl Inter-bold text-[16px] "><span className="text-2xl lg:text-3xl"><img className="w-[35px]" src={icon} alt="Icon"></img></span>Primedeck</p>
           </Link>
         </NavbarBrand>
         <div className="px-10 hidden lg:flex gap-6 justify-start ml-2 Inter-medium text-[15px] ">
