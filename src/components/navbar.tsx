@@ -88,20 +88,14 @@ export const Navbar = () => {
     </div>
 
       <NavbarMenu className="">
-        <div className="mx-4 mt-2 flex flex-col gap-2 Inter-medium text-[16px]">
+        <div className="mx-4 mt-6 flex flex-col gap-2 Inter-medium text-[16px]">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
 
               <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
                 href={item.href}
                 size="lg"
+                className="text-neutral-900 dark:text-white"
               >
                 {item.label}
               </Link>

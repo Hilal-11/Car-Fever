@@ -2,7 +2,6 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Prime Deck",
-  description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
       label: "Home",
@@ -44,6 +43,6 @@ export const siteConfig = {
   ],
   links: {
     github: "https://github.com/Hilal-11",
-    docs: "https://heroui.com",
+    docs: "https://github.com/Hilal-11",
   },
 };

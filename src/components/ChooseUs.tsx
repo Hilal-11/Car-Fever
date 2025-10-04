@@ -6,7 +6,7 @@ function ChooseUs() {
 
 
   return (
-    <div className='container mx-auto py-5'>
+    <div className='container mx-auto py-5 px-5 md:px-10'>
         <div>
             <div className='flex justify-center mx-auto'>
               <h3 className='text-center bg-white dark:text-neutral-900 flex gap-2 justify-center items-center shadow-sm shadow-gray-400 rounded-full px-8 py-1 Inter-bold text-sm'><span><PiCubeDuotone /></span>Choose Us</h3>
