@@ -11,6 +11,7 @@ import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import PageNotFound from "./pages/PageNotFound";
 import Carlisting from "./components/Carlisting";
+import ContactUs from "./pages/ContactUs";
 function App() {
 
   const location = useLocation();
@@ -40,7 +41,7 @@ function App() {
         } path="/">
     </Route>
       <Route element={<Features />} path="/features" />
-      <Route element={<>Hello</>} path="/pricing" />
+      <Route element={<ContactUs />} path="/contact" />
       <Route element={<BlogPage />} path="/blog" />
       <Route element={<AboutPage />} path="/about" />
       <Route element={ <PageNotFound />} path="*"/>
