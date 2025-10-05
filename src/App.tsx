@@ -1,7 +1,6 @@
 import { Route, Routes , useLocation } from "react-router-dom";
 import IndexPage from "@/pages/index";
 import Features from "@/pages/features";
-import PricingPage from "@/pages/pricing";
 import BlogPage from "@/pages/blog";
 import AboutPage from "@/pages/about";
 
@@ -10,7 +9,6 @@ import Reviews from "./components/Reviews";
 import BookcallAndSignupBox from "./components/BookcallAndSignupBox";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
-import Profile from "./pages/Profile";
 import PageNotFound from "./pages/PageNotFound";
 import Carlisting from "./components/Carlisting";
 function App() {
@@ -42,10 +40,9 @@ function App() {
         } path="/">
     </Route>
       <Route element={<Features />} path="/features" />
-      <Route element={<PricingPage />} path="/pricing" />
+      <Route element={<>Hello</>} path="/pricing" />
       <Route element={<BlogPage />} path="/blog" />
       <Route element={<AboutPage />} path="/about" />
-      <Route element={ <Profile />} path="/auth/profile"/>
       <Route element={ <PageNotFound />} path="*"/>
 
     </Routes>
