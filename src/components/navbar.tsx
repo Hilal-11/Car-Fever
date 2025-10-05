@@ -13,7 +13,6 @@ import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { FaInstagram } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
-import Signup from "@/auth/Signup";
 export const Navbar = () => {
   // const navigate = useNavigate()
   return (
@@ -79,9 +78,6 @@ export const Navbar = () => {
               </Link>
             </NavbarMenuItem>
           ))}
-          <div className="flex justify-end ">
-            <button className="my-6 space-x-2 cursor-pointer text-[20px] Inter-medium relative -top-14"><Signup /></button>
-        </div> 
       </div> <br />
       </NavbarMenu>
 
