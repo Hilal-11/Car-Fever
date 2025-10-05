@@ -3,7 +3,7 @@ import { carlistingData } from '@/config/CarlistingConfig'
 function Carlisting() {
   return (
     <div className='w-full py-10 container mx-auto'>
-        <div className="mt-8  text-center z-50 lg:w-2/3 mx-auto md:w-2/3 mx-auto ">
+        <div className="mt-8  text-center z-50 lg:w-2/3 md:w-2/3 mx-auto ">
           <h1 className="px-4 z-50 text-3xl md:text-4xl lg:text-[3.7rem] Inter-bold heading-lg">A curated collection of cars for every need.</h1>
           <p className="px-6 py-4 lg:w-2/3 mx-auto Inter-medium lg:py-0 text-md z-50">Browse through our wide range of vehicles, carefully selected to offer the perfect blend of style, performance, and reliability for every driver.</p>
         </div>
