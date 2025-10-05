@@ -1,20 +1,29 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Prime Deck",
+  name: "Car Fever",
   navItems: [
     {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "Features",
+      label: "All Cars",
       href: "/features",
     },
     {
-      label: "Pricing",
+      label: "Our Services",
       href: "/pricing",
     },
+     {
+      label: "Dealership",
+      href: "/pricing",
+    },
+    {
+      label: "Reviews",
+      href: "/pricing",
+    },
+    {
+      label: "Contact Us",
+      href: "/blog",
+    },
+  
     {
       label: "Blog",
       href: "/blog",
@@ -23,17 +32,26 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "Features",
+      label: "All Cars",
       href: "/features",
     },
     {
-      label: "Pricing",
+      label: "Our Services",
       href: "/pricing",
     },
+     {
+      label: "Dealership",
+      href: "/pricing",
+    },
+    {
+      label: "Reviews",
+      href: "/pricing",
+    },
+    {
+      label: "Contact Us",
+      href: "/blog",
+    },
+  
     {
       label: "Blog",
       href: "/blog",
