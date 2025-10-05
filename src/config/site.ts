@@ -11,17 +11,10 @@ export const siteConfig = {
       label: "Our Services",
       href: "/pricing",
     },
-     {
-      label: "Dealership",
-      href: "/pricing",
-    },
-    {
-      label: "Reviews",
-      href: "/pricing",
-    },
+
     {
       label: "Contact Us",
-      href: "/blog",
+      href: "/contact",
     },
   
     {
@@ -39,17 +32,10 @@ export const siteConfig = {
       label: "Our Services",
       href: "/pricing",
     },
-     {
-      label: "Dealership",
-      href: "/pricing",
-    },
-    {
-      label: "Reviews",
-      href: "/pricing",
-    },
+
     {
       label: "Contact Us",
-      href: "/blog",
+      href: "/contact",
     },
   
     {
