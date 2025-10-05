@@ -1,6 +1,4 @@
-import React from 'react'
 import { motion } from 'motion/react'
-import placeholderImage from '../../public/placeholder.svg'
 import { carlistingData } from '@/config/CarlistingConfig'
 function Carlisting() {
   return (
