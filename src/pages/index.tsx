@@ -2,7 +2,6 @@
 import DefaultLayout from "@/layouts/default";
 import { motion } from 'motion/react'
 import { HiOutlineArrowSmRight } from "react-icons/hi";
-import { IoCarSportSharp } from "react-icons/io5";
 
 import { useEffect } from "react";
 export default function IndexPage() {

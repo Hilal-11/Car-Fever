@@ -1,5 +1,4 @@
 import { Link } from "@heroui/link";
-import icon from '../../cooperation.png'
 import {
   Navbar as HeroUINavbar,
   NavbarBrand,
