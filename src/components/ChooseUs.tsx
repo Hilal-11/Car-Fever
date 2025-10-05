@@ -1,6 +1,5 @@
 
 import { PiCubeDuotone } from "react-icons/pi";
-import placeholderImage from '../../public/placeholder.svg'
 import { carServiceConfig } from "@/config/carerviceConfig"; 
 import { motion } from 'motion/react'
 function ChooseUs() {
