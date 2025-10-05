@@ -19,7 +19,7 @@ export default function DocsPage() {
       </div>
       <div 
           id='bento-grid'
-          className='grid lg:grid-cols-3 gap-8 lg:gap-6 mx-auto lg:w-[100%] py-10 px-6 relative'
+          className='grid lg:grid-cols-3 md:grid-cols-2 gap-8 lg:gap-6 mx-auto lg:w-[100%] py-10 px-6 relative'
         >
             <motion.span 
               className='lg:w-[300px] lg:h-[300px] rounded-full bg-cyan-500 absolute z-10 -top-10 -left-20 blur-[140px]'
@@ -31,7 +31,7 @@ export default function DocsPage() {
             ></motion.span>
             
             <motion.div 
-              className='bg-zinc-100 dark:bg-neutral-900 h-auto rounded-xl bg-zinc-100 dark:bg-neutral-900 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
+              className='py-6 bg-zinc-100 dark:bg-neutral-900 h-auto rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
                  dark:shadow-gray-950 z-20'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
               whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut" }
@@ -41,7 +41,7 @@ export default function DocsPage() {
               }}
             >
               <div className='w-full h-full'>
-                  <img className='h-[300px] w-full overflow-hidden object-cover rounded-xl' src="https://www.motia.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbento5.4d1d483e.webp&w=640&q=75&dpl=dpl_9rrJQBh2cpkrN1Q7dqErBCJnzfyK" alt="Error" />
+                  <img className='h-auto px-6 w-full overflow-hidden object-contain rounded-xl' src="https://framerusercontent.com/images/rX0pbOFErZjRslH5BeXksDiQxVE.png?scale-down-to=1024&width=2622&height=1132" alt="Error" />
               
               <div className="px-4 space-y-2 pb-6">
                 <h2 className="Inter-bold text-2xl">Top 5 LLM's all time</h2>
@@ -50,7 +50,7 @@ export default function DocsPage() {
               </div>
             </motion.div>
             <motion.div 
-              className='bg-zinc-100 dark:bg-neutral-900 h-auto rounded-xl bg-zinc-100 dark:bg-neutral-900 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
+              className='py-6 bg-zinc-100 dark:bg-neutral-900 h-auto rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
                  dark:shadow-gray-950 z-20'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
               whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut" }
@@ -60,7 +60,7 @@ export default function DocsPage() {
               }}
             >
               <div className='w-full '>
-                  <img className='h-[300px] w-full overflow-hidden object-cover rounded-xl' src="https://ai-saas-template-aceternity.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fthumbnail.ff6badda.jpeg&w=828&q=75" alt="Error" />
+                  <img className='h-auto px-6 w-full overflow-hidden object-contain rounded-xl' src="https://framerusercontent.com/images/rX0pbOFErZjRslH5BeXksDiQxVE.png?scale-down-to=1024&width=2622&height=1132" alt="Error" />
               
               <div className="px-4 space-y-2 pb-6 py-6">
                 <h2 className="Inter-bold text-2xl">Top 5 LLM's all time</h2>
@@ -69,7 +69,7 @@ export default function DocsPage() {
               </div>
             </motion.div>
             <motion.div 
-              className='bg-zinc-100 dark:bg-neutral-900 h-auto rounded-xl bg-zinc-100 dark:bg-neutral-900 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
+              className='py-6 bg-zinc-100 dark:bg-neutral-900 h-auto rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] *:
                  dark:shadow-gray-950 z-20'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
               whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut" }
@@ -79,7 +79,7 @@ export default function DocsPage() {
               }}
             >
               <div className='w-full h-full'>
-                  <img className='h-[300px] w-full overflow-hidden object-cover rounded-xl' src="https://www.motia.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FmotiaCloudFlow.a7fbdbae.webp&w=640&q=75&dpl=dpl_9rrJQBh2cpkrN1Q7dqErBCJnzfyK" alt="Error" /> 
+                  <img className='h-auto px-6 w-full overflow-hidden object-contain rounded-xl' src="https://framerusercontent.com/images/rX0pbOFErZjRslH5BeXksDiQxVE.png?scale-down-to=1024&width=2622&height=1132" alt="Error" /> 
               
               <div className="px-4 space-y-2 pb-6 ">
                 <h2 className="Inter-bold text-2xl">Top 5 LLM's all time</h2>
