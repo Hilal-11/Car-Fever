@@ -1,5 +1,4 @@
 import { FaqConfig } from '@/config/FAQconfig';
-// import {Accordion, AccordionItem} from "@heroui/react";
 import {Accordion, AccordionItem} from "@heroui/accordion";
 function FAQ() {
   return (

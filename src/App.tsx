@@ -5,9 +5,7 @@ import PricingPage from "@/pages/pricing";
 import BlogPage from "@/pages/blog";
 import AboutPage from "@/pages/about";
 
-import { companiesData } from '@/config/companies'
 import ChooseUs from "./components/ChooseUs";
-import Pricing from "./components/Pricing";
 import Reviews from "./components/Reviews";
 import BookcallAndSignupBox from "./components/BookcallAndSignupBox";
 import FAQ from "./components/FAQ";
