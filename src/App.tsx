@@ -5,13 +5,14 @@ import BlogPage from "@/pages/blog";
 import AboutPage from "@/pages/about";
 
 import ChooseUs from "./components/ChooseUs";
-import Reviews from "./components/Reviews";
 import BookcallAndSignupBox from "./components/BookcallAndSignupBox";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import PageNotFound from "./pages/PageNotFound";
 import Carlisting from "./components/Carlisting";
 import ContactUs from "./pages/ContactUs";
+import ReviewsPage from "./pages/ReviewsPage";
+import Reviews from "./components/Reviews";
 function App() {
 
   const location = useLocation();
@@ -44,6 +45,7 @@ function App() {
       <Route element={<ContactUs />} path="/contact" />
       <Route element={<BlogPage />} path="/blog" />
       <Route element={<AboutPage />} path="/about" />
+      <Route element={<ReviewsPage />} path="/reviews" />
       <Route element={ <PageNotFound />} path="*"/>
 
     </Routes>
